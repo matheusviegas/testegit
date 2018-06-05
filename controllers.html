@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSMVC</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700&subset=latin,cyrillic'
+          rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="http://matheusviegas.github.io/testegit/css/theme.css" type="text/css"/>
+    <link rel="stylesheet" href="http://matheusviegas.github.io/testegit/css/theme-fixes.css" type="text/css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+</head>
+<body class="wy-body-for-nav">
+
+    <div class="wy-grid-for-nav">
+
+        <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+            <div class="wy-side-nav-search">
+                <a href="http://matheusviegas.github.io/testegit/" class="fa fa-home"> MSMVC</a>
+            </div>
+
+            <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                                            <li class="toctree-l1 ">
+                            <a class="reference internal "
+                               href="http://matheusviegas.github.io/testegit/index.html">
+                                Home
+                            </a>
+                        </li>
+                                            <li class="toctree-l1 ">
+                            <a class="reference internal "
+                               href="http://matheusviegas.github.io/testegit/configure.html">
+                                Configurando
+                            </a>
+                        </li>
+                                            <li class="toctree-l1 current">
+                            <a class="reference internal current"
+                               href="http://matheusviegas.github.io/testegit/controllers.html">
+                                Controllers
+                            </a>
+                        </li>
+                                            <li class="toctree-l1 ">
+                            <a class="reference internal "
+                               href="https://github.com/matheusviegas/msmvc">
+                                Download
+                            </a>
+                        </li>
+                                    </ul>
+            </div>
+            &nbsp;
+        </nav>
+
+        <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+                        <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+                <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+                <a href="http://matheusviegas.github.io/testegit/">MSMVC</a>
+            </nav>
+
+
+                        <div class="wy-nav-content">
+                <div class="rst-content">
+                    <div role="main" class="document">
+                        <h2 id="creating-a-new-controller">Creating a new Controller</h2>
+<p>This is the main structure of a controller. Must extend the base Controller from App\Core\Controller and call the construct of the super class.</p>
+<p>Within the constructor of the super class, you can inform the role required for access this controller (optional, if not informed its gona be a public one).</p>
+<pre><code class="language-php">&lt;?php
+namespace App\Controllers;
+use App\Core\Controller;
+
+class ExampleController extends Controller {
+
+    public function __construct() {
+        parent::__construct();
+    }
+
+    public function index() {
+        // do something
+    }
+}</code></pre>
+                    </div>
+
+                    <footer>
+                        <hr/>
+                                                    <div role="contentinfo">
+                                <p>
+                                    Find MSMVC on <a href="https://github.com/matheusviegas/testegit">GitHub</a>.
+                                </p>
+                            </div>
+                                            </footer>
+
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script src="http://matheusviegas.github.io/testegit/js/theme.js"></script>
+
+    <script>
+        $(function() {
+            // Syntax highlighting
+            hljs.initHighlightingOnLoad();
+        });
+    </script>
+
+</body>
+</html>
