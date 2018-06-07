@@ -23,30 +23,30 @@
 
             <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
                 <ul>
-                                            <li class="toctree-l1 current">
-                            <a class="reference internal current"
+                                            <li class="toctree-l1 ">
+                            <a class="reference internal "
                                href="https://matheusviegas.github.io/testegit/index.html">
                                 Introduction
                             </a>
                             
-                            <ul class="current">
+                            <ul class="">
                                                         </ul>
                             
                         </li>
-                                            <li class="toctree-l1 ">
-                            <a class="reference internal "
+                                            <li class="toctree-l1 current">
+                            <a class="reference internal current"
                                href="https://matheusviegas.github.io/testegit/home.html">
                                 <i class="fa fa-home"></i> Home
                             </a>
                             
-                            <ul class="">
+                            <ul class="current">
                                                             <li class="toctree-l2 ">
                                     <a class=" reference internal" href="https://matheusviegas.github.io/testegit/sub.html">
                                         Subtopico - (sub)
                                     </a>
                                 </li>
-                                                            <li class="toctree-l2 ">
-                                    <a class=" reference internal" href="https://matheusviegas.github.io/testegit/sub2.html">
+                                                            <li class="toctree-l2 current">
+                                    <a class="current reference internal" href="https://matheusviegas.github.io/testegit/sub2.html">
                                         Subtopico 2 - (sub2)
                                     </a>
                                 </li>
@@ -104,9 +104,23 @@
                         <div class="wy-nav-content">
                 <div class="rst-content">
                     <div role="main" class="document">
-                        <h2 id="intro">Intro</h2>
+                        <h2 id="subtopico-2">Subtopico 2</h2>
 <p>This is the main structure of a controller. Must extend the base Controller from App\Core\Controller and call the construct of the super class.</p>
 <p>Within the constructor of the super class, you can inform the role required for access this controller (optional, if not informed its gona be a public one).</p>
+<pre><code class="language-php">&lt;?php
+namespace App\Controllers;
+use App\Core\Controller;
+
+class ExampleController extends Controller {
+
+    public function __construct() {
+        parent::__construct();
+    }
+
+    public function index() {
+        // do something
+    }
+}</code></pre>
                     </div>
 
                     <footer>
